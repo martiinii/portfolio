@@ -4,7 +4,7 @@ import { LinksSection } from "@/components/links/links-section";
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-10 pt-10 md:px-20 md:pt-30 md:pb-10 space-y-20">
+    <main className="container mx-auto px-10 py-10 md:px-20 md:pt-30 md:pb-10 space-y-20">
       <div className="flex w-full justify-between flex-col lg:flex-row gap-5 lg:gap-3">
         <Hero />
         <LinksSection />
