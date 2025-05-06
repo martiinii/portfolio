@@ -1,7 +1,7 @@
+import { ArticleContainer } from "../article-container";
 import { CompanyWithLogo } from "../company-with-logo";
 import { SectionTitle } from "../typography";
 import { Separator } from "../ui/separator";
-import { ExperienceCard } from "./experience-card";
 import { ExperienceTime } from "./experience-time";
 import { experience } from "./experience.data";
 
@@ -14,7 +14,7 @@ export const ExperienceSection = () => {
       <div className="space-y-10">
         {experience
           .map((experience) => (
-            <ExperienceCard
+            <ArticleContainer
               key={`${experience.company}-${experience.position}-${experience.dateStart.toLocaleDateString()}`}
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-3">
@@ -30,7 +30,7 @@ export const ExperienceSection = () => {
                 />
               </div>
               <p className="text-lg/loose">{experience.description}</p>
-            </ExperienceCard>
+            </ArticleContainer>
           ))
           .reduce<React.ReactNode[]>(
             // biome-ignore lint/suspicious/noArrayIndexKey: No other choice but to use index as key
