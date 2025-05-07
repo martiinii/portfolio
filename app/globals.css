@@ -121,7 +121,7 @@
   }
 }
 
-/* @layer utilities {
+@layer utilities {
     .grid-gradient::before {
         --line: color-mix(in hsl, theme(color.muted.foreground), transparent 80%);
         --size: 65px;
@@ -129,4 +129,4 @@
         -webkit-mask: linear-gradient(-20deg, transparent 50%, white);
         mask: linear-gradient(-20deg, transparent 50%, white);
       }
-} */
+}
