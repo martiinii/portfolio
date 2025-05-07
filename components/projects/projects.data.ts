@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     title: "UltraStar",
     description:
-      "Download songs for karaoke from database containing 25000+ songs. Automatically scrapes songs metadata and stores it inside database. When selected song is downloaded, it automatically fetches lyrics and matching video from YouTube. Used mostly by me & my friends at parties.",
+      "Automatically fetches lyrics, YouTube videos, and metadata for 25,000+ songs—so your next party can skip the setup and dive straight into the off-key magic. Built to handle everything behind the scenes, it's the tool that turned my friends' and my weekends into full-blown karaoke parties.",
     links: [
       {
         type: "github",
