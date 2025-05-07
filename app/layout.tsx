@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={cn(
           `${interSans.variable} antialiased font-sans`,
-          "before:fixed before:inset-0  before:-z-1 grid-gradient",
+          "before:fixed before:inset-0 before:-z-1 grid-gradient",
         )}
       >
         {children}
@@ -36,4 +36,3 @@ export default function RootLayout({
     </html>
   );
 }
-// color-mix(in hsl, canvasText, transparent 80%)
