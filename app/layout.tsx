@@ -1,16 +1,12 @@
 import { TailwindSizeIndicator } from "@/components/dev/tailwind-size-indicator";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Geist_Mono, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 const interSans = Inter({
   variable: "--font-inter-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+  display: "swap",
   subsets: ["latin"],
 });
 
@@ -29,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          `${interSans.variable} ${geistMono.variable} antialiased font-sans`,
+          `${interSans.variable} antialiased font-sans`,
           "before:fixed before:inset-0  before:-z-1 grid-gradient",
         )}
       >
