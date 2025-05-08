@@ -1,0 +1,10 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(((?:[^()]|\\([^()]*\\))*)\\)", "[\"'`]?([^\"'`]+)[\"'`]?"],
+    ["cn\\(((?:[^()]|\\([^()]*\\))*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+    // "cva\\(([^)]*)\\)",
+    // "[\"'`]([^\"'`]*).*?[\"'`]"
+  ],
+  "tailwindCSS.experimental.configFile": "app/globals.css"
+}
