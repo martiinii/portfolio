@@ -1,4 +1,5 @@
 import { ArticleContainer } from "../article-container";
+import { TitleWithLogo } from "../title-with-logo";
 import { SectionTitle } from "../typography";
 import { Separator } from "../ui/separator";
 import { ProjectLink } from "./project-link";
@@ -15,9 +16,17 @@ export const ProjectsSection = () => {
           .map((project) => (
             <ArticleContainer key={project.title}>
               <div className="flex gap-2 justify-between">
-                <span className="text-2xl font-medium tracking-tight">
-                  {project.title}
-                </span>
+                {project.imageSrc ? (
+                  <TitleWithLogo
+                    alt=""
+                    src={project.imageSrc}
+                    title={project.title}
+                  />
+                ) : (
+                  <span className="text-2xl font-medium tracking-tight">
+                    {project.title}
+                  </span>
+                )}
 
                 <div className="flex gap-2">
                   {project.links?.map((link) => (

@@ -11,6 +11,7 @@ export const ExternalLink = ({
   return (
     <Link
       target={target || "_blank"}
+      rel="noreferrer"
       className={cn(
         "text-secondary-foreground underline-offset-4 hover:underline inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md transition-all [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 hover:[&_svg]:scale-110 [&_svg]:transition-transform outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
         className,
