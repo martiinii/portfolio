@@ -1,6 +1,7 @@
 import type Image from "next/image";
 import type { ComponentProps } from "react";
 
+import BetapointLogo from "@/public/icons/betapoint.png";
 import GreenWedgeLogo from "@/public/icons/greenwedge.png";
 import HaergiLogo from "@/public/icons/haergi.png";
 import { ExternalLink } from "../external-link";
@@ -14,6 +15,13 @@ type Experience = {
   dateEnd?: Date;
 };
 export const experience: Experience[] = [
+  {
+    company: "Beta Point",
+    position: "AI & Automation Specialist",
+    description: "",
+    dateStart: new Date("2026-04-01"),
+    imageSrc: BetapointLogo,
+  },
   {
     company: "Haergi",
     position: "Fullstack developer",
@@ -29,6 +37,7 @@ export const experience: Experience[] = [
       </>
     ),
     dateStart: new Date("2024-04-01"),
+    dateEnd: new Date("2026-03-31"),
     imageSrc: HaergiLogo,
   },
   {
